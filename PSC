@@ -1,0 +1,135 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Pink Sands Charters | The Bahamas</title> <style> * { margin: 0; padding: 0; box-sizing: border-box; } html { scroll-behavior: smooth; } body { font-family: Arial, sans-serif; color: #17324d; background: #fffaf7; line-height: 1.6; } /* Navigation */ nav { position: fixed; top: 0; width: 100%; z-index: 1000; display: flex; justify-content: space-between; align-items: center; padding: 20px 7%; background: rgba(255, 255, 255, 0.95); box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08); } .logo { color: #d9799a; font-size: 24px; font-weight: bold; } nav div { display: flex; gap: 25px; } nav a { color: #17324d; text-decoration: none; font-weight: bold; } nav a:hover { color: #d9799a; } /* Hero */ .hero { min-height: 100vh; display: flex; justify-content: center; align-items: center; text-align: center; padding: 120px 20px 80px; background: linear-gradient(rgba(10, 50, 75, 0.35), rgba(10, 50, 75, 0.35)), url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=2000&q=80") center/cover; color: white; } .hero-content { max-width: 850px; } .hero h1 { font-size: clamp(45px, 7vw, 85px); line-height: 1.05; margin-bottom: 25px; } .hero p { font-size: 20px; max-width: 750px; margin: 0 auto 35px; } .button { display: inline-block; background: #e58eaa; color: white; padding: 15px 30px; border-radius: 30px; text-decoration: none; font-weight: bold; transition: 0.3s; } .button:hover { background: #c96889; transform: translateY(-2px); } /* General sections */ section { padding: 90px 7%; } .section-title { text-align: center; margin-bottom: 50px; } .section-title h2 { font-size: 42px; color: #17324d; margin-bottom: 10px; } .section-title p { color: #607486; max-width: 650px; margin: auto; } /* Experiences */ .experiences { background: white; } .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px; max-width: 1200px; margin: auto; } .card { background: #fffaf7; padding: 35px 25px; text-align: center; border-radius: 18px; box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07); transition: 0.3s; } .card:hover { transform: translateY(-8px); } .card-icon { font-size: 45px; margin-bottom: 15px; } .card h3 { font-size: 25px; margin-bottom: 12px; color: #d9799a; } /* About */ .about { background: #f7e7e9; } .about-content { max-width: 900px; margin: auto; text-align: center; } .about-content h2 { font-size: 42px; margin-bottom: 20px; } .about-content p { font-size: 18px; color: #526778; } /* Contact */ .contact { text-align: center; background: #e9f7f8; } .contact h2 { font-size: 42px; margin-bottom: 20px; } .contact p { margin: 10px auto; font-size: 18px; } .contact a { color: #d05f83; font-weight: bold; } .contact-button { margin-top: 25px; } /* Footer */ footer { background: #17324d; color: white; text-align: center; padding: 30px 20px; } footer p { margin: 5px; } /* Mobile */ @media (max-width: 800px) { nav { padding: 15px 5%; } nav div { gap: 12px; } nav a { font-size: 14px; } .cards { grid-template-columns: 1fr; } .hero p { font-size: 17px; } section { padding: 70px 5%; } } </style> </head> <body> <!-- Navigation --> <nav> <div class="logo">Pink Sands Charters</div>
+<div>
+  <a href="#home">Home</a>
+  <a href="#experiences">Experiences</a>
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+</div>
+
+</nav> <!-- Hero --> <section class="hero" id="home">
+<div class="hero-content">
+
+  <h1>Your Day. Your Boat. Your Bahamas.</h1>
+
+  <p>
+    Discover the beauty of The Bahamas with Pink Sands Charters.
+    Cruise through crystal-clear waters, explore vibrant reefs while
+    snorkeling, dive alongside sharks for an unforgettable adventure,
+    or experience the thrill of jet skiing. Whether you're seeking
+    relaxation, excitement, or a little of both, we'll create a private
+    day on the water tailored just for you.
+  </p>
+
+  <a href="#contact" class="button">Book Your Charter</a>
+
+</div>
+
+</section> <!-- Experiences --> <section class="experiences" id="experiences">
+<div class="section-title">
+
+  <h2>Experience The Bahamas</h2>
+
+  <p>
+    Make unforgettable memories on the beautiful waters of The Bahamas.
+  </p>
+
+</div>
+
+<div class="cards">
+
+  <div class="card">
+
+    <div class="card-icon">🤿</div>
+
+    <h3>Snorkeling</h3>
+
+    <p>
+      Explore crystal-clear Bahamian waters and discover colorful reefs
+      and incredible marine life beneath the surface.
+    </p>
+
+  </div>
+
+
+  <div class="card">
+
+    <div class="card-icon">🦈</div>
+
+    <h3>Shark Diving</h3>
+
+    <p>
+      Experience the thrill of getting into the water and seeing sharks
+      up close in their natural environment.
+    </p>
+
+  </div>
+
+
+  <div class="card">
+
+    <div class="card-icon">🌊</div>
+
+    <h3>Jet Skiing</h3>
+
+    <p>
+      Feel the rush as you ride across the turquoise waters of paradise
+      and experience The Bahamas from a whole new perspective.
+    </p>
+
+  </div>
+
+</div>
+
+</section> <!-- About --> <section class="about" id="about">
+<div class="about-content">
+
+  <h2>Welcome to Pink Sands Charters</h2>
+
+  <p>
+    We provide unforgettable private boating experiences in The Bahamas,
+    combining adventure, relaxation, and the natural beauty of the islands.
+    Whether you're looking for an exciting day of water activities or a
+    relaxing escape on the ocean, Pink Sands Charters is here to make
+    your day on the water one you'll never forget.
+  </p>
+
+</div>
+
+</section> <!-- Contact --> <section class="contact" id="contact">
+<h2>Ready for Your Adventure?</h2>
+
+<p>
+  Contact Pink Sands Charters today and start planning your perfect
+  day on the beautiful waters of The Bahamas.
+</p>
+
+<p>
+  Email:
+  <a href="mailto:PinkSandsCharters@hotmail.com">
+    PinkSandsCharters@hotmail.com
+  </a>
+</p>
+
+<p>
+  Phone:
+  <a href="tel:+12428063681">
+    +1 (242) 806-3681
+  </a>
+</p>
+
+<div class="contact-button">
+  <a
+    href="mailto:PinkSandsCharters@hotmail.com"
+    class="button">
+    Contact Us
+  </a>
+</div>
+
+</section> <!-- Footer --> <footer>
+<p><strong>Pink Sands Charters</strong></p>
+
+<p>The Bahamas</p>
+
+<p>© 2026 Pink Sands Charters. All rights reserved.</p>
+
+</footer> </body> </html>
