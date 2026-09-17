@@ -1,136 +1,1142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Pink Sands Charters | The Bahamas</title> <style> * { margin: 0; padding: 0; box-sizing: border-box; } html { scroll-behavior: smooth; } body { font-family: Arial, sans-serif; color: #17324d; background: #fffaf7; line-height: 1.6; } /* Navigation */ nav { position: fixed; top: 0; width: 100%; z-index: 1000; display: flex; justify-content: space-between; align-items: center; padding: 20px 7%; background: rgba(255, 255, 255, 0.95); box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08); } .logo { color: #d9799a; font-size: 24px; font-weight: bold; } nav div { display: flex; gap: 25px; } nav a { color: #17324d; text-decoration: none; font-weight: bold; } nav a:hover { color: #d9799a; } /* Hero */ .hero { min-height: 100vh; display: flex; justify-content: center; align-items: center; text-align: center; padding: 120px 20px 80px; background: linear-gradient(rgba(10, 50, 75, 0.35), rgba(10, 50, 75, 0.35)), url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=2000&q=80") center/cover; color: white; } .hero-content { max-width: 850px; } .hero h1 { font-size: clamp(45px, 7vw, 85px); line-height: 1.05; margin-bottom: 25px; } .hero p { font-size: 20px; max-width: 750px; margin: 0 auto 35px; } .button { display: inline-block; background: #e58eaa; color: white; padding: 15px 30px; border-radius: 30px; text-decoration: none; font-weight: bold; transition: 0.3s; } .button:hover { background: #c96889; transform: translateY(-2px); } /* General sections */ section { padding: 90px 7%; } .section-title { text-align: center; margin-bottom: 50px; } .section-title h2 { font-size: 42px; color: #17324d; margin-bottom: 10px; } .section-title p { color: #607486; max-width: 650px; margin: auto; } /* Experiences */ .experiences { background: white; } .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px; max-width: 1200px; margin: auto; } .card { background: #fffaf7; padding: 35px 25px; text-align: center; border-radius: 18px; box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07); transition: 0.3s; } .card:hover { transform: translateY(-8px); } .card-icon { font-size: 45px; margin-bottom: 15px; } .card h3 { font-size: 25px; margin-bottom: 12px; color: #d9799a; } /* About */ .about { background: #f7e7e9; } .about-content { max-width: 900px; margin: auto; text-align: center; } .about-content h2 { font-size: 42px; margin-bottom: 20px; } .about-content p { font-size: 18px; color: #526778; } /* Contact */ .contact { text-align: center; background: #e9f7f8; } .contact h2 { font-size: 42px; margin-bottom: 20px; } .contact p { margin: 10px auto; font-size: 18px; } .contact a { color: #d05f83; font-weight: bold; } .contact-button { margin-top: 25px; } /* Footer */ footer { background: #17324d; color: white; text-align: center; padding: 30px 20px; } footer p { margin: 5px; } /* Mobile */ @media (max-width: 800px) { nav { padding: 15px 5%; } nav div { gap: 12px; } nav a { font-size: 14px; } .cards { grid-template-columns: 1fr; } .hero p { font-size: 17px; } section { padding: 70px 5%; } } </style> </head> <body> <!-- Navigation --> <nav> <div class="logo">Pink Sands Charters</div>
-<div>
-  <a href="#home">Home</a>
-  <a href="#experiences">Experiences</a>
-  <a href="#about">About</a>
-  <a href="#contact">Contact</a>
+<title>Pink Sands Charters | The Bahamas</title>
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #17324d;
+    background: #fffaf7;
+    line-height: 1.6;
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 18px 7%;
+
+    background: rgba(255,255,255,0.96);
+    backdrop-filter: blur(10px);
+
+    box-shadow: 0 2px 20px rgba(0,0,0,0.08);
+}
+
+.logo {
+    color: #d9799a;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav div {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: #17324d;
+    text-decoration: none;
+    font-weight: bold;
+    transition: .3s;
+}
+
+nav a:hover {
+    color: #d9799a;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 130px 20px 80px;
+
+    background:
+        linear-gradient(
+            rgba(10,50,75,.42),
+            rgba(10,50,75,.42)
+        ),
+        url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=2000&q=85")
+        center/cover;
+
+    color: white;
+}
+
+.hero-content {
+    max-width: 900px;
+}
+
+.hero h1 {
+    font-size: clamp(45px,7vw,85px);
+    line-height: 1.05;
+    margin-bottom: 25px;
+
+    text-shadow: 0 5px 25px rgba(0,0,0,.25);
+}
+
+.hero p {
+    font-size: 20px;
+    max-width: 780px;
+    margin: 0 auto 35px;
+}
+
+.button {
+    display: inline-block;
+
+    background: #e58eaa;
+    color: white;
+
+    padding: 15px 32px;
+
+    border-radius: 30px;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    transition: .3s;
+
+    box-shadow: 0 8px 25px rgba(0,0,0,.15);
+}
+
+.button:hover {
+    background: #c96889;
+    transform: translateY(-3px);
+}
+
+/* =========================
+   GENERAL SECTIONS
+========================= */
+
+section {
+    padding: 100px 7%;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.section-title h2 {
+    font-size: 44px;
+    color: #17324d;
+    margin-bottom: 10px;
+}
+
+.section-title p {
+    color: #607486;
+    max-width: 700px;
+    margin: auto;
+    font-size: 18px;
+}
+
+/* =========================
+   EXPERIENCES
+========================= */
+
+.experiences {
+    background: white;
+}
+
+.cards {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0,1fr));
+
+    gap: 30px;
+
+    max-width: 1250px;
+
+    margin: auto;
+}
+
+/* Clickable card */
+
+.card {
+    position: relative;
+
+    overflow: hidden;
+
+    background: white;
+
+    border-radius: 22px;
+
+    box-shadow:
+        0 12px 35px rgba(0,0,0,.10);
+
+    cursor: pointer;
+
+    transition: .4s;
+
+    border: 1px solid rgba(0,0,0,.04);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+
+    box-shadow:
+        0 20px 45px rgba(0,0,0,.16);
+}
+
+/* Card image */
+
+.card-image {
+    width: 100%;
+    height: 280px;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: .5s;
+}
+
+.card:hover .card-image {
+    transform: scale(1.07);
+}
+
+/* Image overlay */
+
+.card-image-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.card-image-container::after {
+    content: "VIEW PHOTOS →";
+
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+
+    background: rgba(23,50,77,.9);
+
+    color: white;
+
+    padding: 12px 20px;
+
+    border-radius: 30px;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    opacity: 0;
+
+    transition: .3s;
+
+    white-space: nowrap;
+}
+
+.card:hover .card-image-container::after {
+    opacity: 1;
+}
+
+.card-content {
+    padding: 28px;
+    text-align: center;
+}
+
+.card-icon {
+    font-size: 38px;
+    margin-bottom: 8px;
+}
+
+.card h3 {
+    font-size: 27px;
+    margin-bottom: 10px;
+    color: #d9799a;
+}
+
+.card p {
+    color: #607486;
+}
+
+/* Small link */
+
+.learn-more {
+    display: inline-block;
+
+    margin-top: 18px;
+
+    color: #d05f83;
+
+    font-weight: bold;
+
+    text-decoration: none;
+}
+
+.learn-more:hover {
+    text-decoration: underline;
+}
+
+/* =========================
+   MODAL / PHOTO GALLERY
+========================= */
+
+.modal {
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 3000;
+
+    background: rgba(5,25,40,.88);
+
+    display: none;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 25px;
+
+    overflow-y: auto;
+}
+
+.modal.active {
+    display: flex;
+}
+
+.modal-box {
+    width: 100%;
+    max-width: 1100px;
+
+    background: #fffaf7;
+
+    border-radius: 25px;
+
+    overflow: hidden;
+
+    position: relative;
+
+    box-shadow: 0 25px 80px rgba(0,0,0,.35);
+}
+
+.modal-header {
+    padding: 30px 35px 15px;
+
+    text-align: center;
+}
+
+.modal-header h2 {
+    color: #17324d;
+    font-size: 38px;
+}
+
+.modal-header p {
+    color: #607486;
+}
+
+.close {
+    position: absolute;
+
+    right: 20px;
+    top: 15px;
+
+    width: 45px;
+    height: 45px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #17324d;
+    color: white;
+
+    font-size: 28px;
+
+    cursor: pointer;
+
+    z-index: 10;
+
+    transition: .3s;
+}
+
+.close:hover {
+    background: #d9799a;
+}
+
+/* Gallery */
+
+.gallery {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap: 12px;
+
+    padding: 20px 30px 30px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 280px;
+
+    object-fit: cover;
+
+    border-radius: 15px;
+
+    transition: .3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.02);
+}
+
+/* Modal button */
+
+.modal-button {
+    text-align: center;
+
+    padding: 0 30px 35px;
+}
+
+/* =========================
+   ABOUT
+========================= */
+
+.about {
+    background:
+        linear-gradient(
+            rgba(247,231,233,.95),
+            rgba(247,231,233,.95)
+        );
+}
+
+.about-content {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+}
+
+.about-content h2 {
+    font-size: 44px;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-size: 19px;
+    color: #526778;
+}
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact {
+    text-align: center;
+    background: #e9f7f8;
+}
+
+.contact h2 {
+    font-size: 44px;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    margin: 10px auto;
+    font-size: 18px;
+}
+
+.contact a {
+    color: #d05f83;
+    font-weight: bold;
+}
+
+.contact-button {
+    margin-top: 25px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: #17324d;
+    color: white;
+
+    text-align: center;
+
+    padding: 35px 20px;
+}
+
+footer p {
+    margin: 5px;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 900px) {
+
+    nav {
+        padding: 15px 5%;
+    }
+
+    nav div {
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+        max-width: 550px;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery img {
+        height: 300px;
+    }
+
+    .hero p {
+        font-size: 17px;
+    }
+
+    section {
+        padding: 75px 5%;
+    }
+}
+
+@media (max-width: 550px) {
+
+    .logo {
+        font-size: 18px;
+    }
+
+    nav div {
+        display: none;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+    .section-title h2,
+    .about-content h2,
+    .contact h2 {
+        font-size: 34px;
+    }
+
+    .modal-header h2 {
+        font-size: 30px;
+    }
+
+    .gallery {
+        padding: 15px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+
+<!-- =========================
+     NAVIGATION
+========================= -->
+
+<nav>
+
+    <div class="logo">
+        Pink Sands Charters
+    </div>
+
+    <div>
+        <a href="#home">Home</a>
+        <a href="#experiences">Experiences</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+</nav>
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <h1>
+            Your Day. Your Boat. Your Bahamas.
+        </h1>
+
+        <p>
+            Discover the beauty of The Bahamas with Pink Sands Charters.
+            Cruise through crystal-clear waters, explore vibrant reefs
+            while snorkeling, dive alongside sharks for an unforgettable
+            adventure, or experience the thrill of jet skiing.
+        </p>
+
+        <a href="#contact" class="button">
+            Book Your Charter
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     EXPERIENCES
+========================= -->
+
+<section class="experiences" id="experiences">
+
+    <div class="section-title">
+
+        <h2>
+            Experience The Bahamas
+        </h2>
+
+        <p>
+            Click an experience to see real photos and explore more
+            about the adventure.
+        </p>
+
+    </div>
+
+
+    <div class="cards">
+
+
+        <!-- SNORKELING -->
+
+        <div
+            class="card"
+            onclick="openModal('snorkelingModal')"
+        >
+
+            <div class="card-image-container">
+
+                <img
+                    class="card-image"
+                    src="https://images.unsplash.com/photo-1565257369125-82b82ced4fcc?auto=format&fit=crop&w=1200&q=85"
+                    alt="People snorkeling underwater"
+                >
+
+            </div>
+
+            <div class="card-content">
+
+                <div class="card-icon">
+                    🤿
+                </div>
+
+                <h3>
+                    Snorkeling
+                </h3>
+
+                <p>
+                    Explore crystal-clear Bahamian waters and
+                    discover colorful reefs and incredible
+                    marine life beneath the surface.
+                </p>
+
+                <span class="learn-more">
+                    View Snorkeling Photos →
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <!-- SHARK DIVING -->
+
+        <div
+            class="card"
+            onclick="openModal('sharkModal')"
+        >
+
+            <div class="card-image-container">
+
+                <img
+                    class="card-image"
+                    src="https://images.unsplash.com/photo-1560275619-4cc5fa59d3ae?auto=format&fit=crop&w=1200&q=85"
+                    alt="Diver swimming with sharks in The Bahamas"
+                >
+
+            </div>
+
+            <div class="card-content">
+
+                <div class="card-icon">
+                    🦈
+                </div>
+
+                <h3>
+                    Shark Diving
+                </h3>
+
+                <p>
+                    Experience the thrill of getting into the
+                    water and seeing sharks up close in their
+                    natural environment.
+                </p>
+
+                <span class="learn-more">
+                    View Shark Photos →
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <!-- JET SKIING -->
+
+        <div
+            class="card"
+            onclick="openModal('jetskiModal')"
+        >
+
+            <div class="card-image-container">
+
+                <img
+                    class="card-image"
+                    src="https://images.unsplash.com/photo-1768853895335-b7ce11d76873?auto=format&fit=crop&w=1200&q=85"
+                    alt="Jet skiing on the ocean"
+                >
+
+            </div>
+
+            <div class="card-content">
+
+                <div class="card-icon">
+                    🌊
+                </div>
+
+                <h3>
+                    Jet Skiing
+                </h3>
+
+                <p>
+                    Feel the rush as you ride across turquoise
+                    waters and experience The Bahamas from
+                    a whole new perspective.
+                </p>
+
+                <span class="learn-more">
+                    View Jet Ski Photos →
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     SNORKELING MODAL
+========================= -->
+
+<div
+    class="modal"
+    id="snorkelingModal"
+    onclick="closeOutside(event, 'snorkelingModal')"
+>
+
+    <div class="modal-box">
+
+        <button
+            class="close"
+            onclick="closeModal('snorkelingModal')"
+        >
+            ×
+        </button>
+
+        <div class="modal-header">
+
+            <h2>
+                Snorkeling in The Bahamas
+            </h2>
+
+            <p>
+                Explore clear tropical waters, coral reefs and
+                incredible marine life.
+            </p>
+
+        </div>
+
+        <div class="gallery">
+
+            <img
+                src="https://images.unsplash.com/photo-1565257369125-82b82ced4fcc?auto=format&fit=crop&w=1200&q=85"
+                alt="People snorkeling underwater"
+            >
+
+            <img
+                src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1200&q=85"
+                alt="Person snorkeling in clear blue water"
+            >
+
+            <img
+                src="https://images.unsplash.com/photo-1530053969600-caed2596d242?auto=format&fit=crop&w=1200&q=85"
+                alt="Snorkeling and tropical reef"
+            >
+
+        </div>
+
+        <div class="modal-button">
+
+            <a
+                href="https://www.bahamas.com/things-to-do/snorkeling"
+                target="_blank"
+                class="button"
+            >
+                Explore Snorkeling in The Bahamas →
+            </a>
+
+        </div>
+
+    </div>
+
 </div>
 
-</nav> <!-- Hero --> <section class="hero" id="home">
-<div class="hero-content">
 
-  <h1>Your Day. Your Boat. Your Bahamas.</h1>
+<!-- =========================
+     SHARK DIVING MODAL
+========================= -->
 
-  <p>
-    Discover the beauty of The Bahamas with Pink Sands Charters.
-    Cruise through crystal-clear waters, explore vibrant reefs while
-    snorkeling, dive alongside sharks for an unforgettable adventure,
-    or experience the thrill of jet skiing. Whether you're seeking
-    relaxation, excitement, or a little of both, we'll create a private
-    day on the water tailored just for you.
-  </p>
+<div
+    class="modal"
+    id="sharkModal"
+    onclick="closeOutside(event, 'sharkModal')"
+>
 
-  <a href="#contact" class="button">Book Your Charter</a>
+    <div class="modal-box">
+
+        <button
+            class="close"
+            onclick="closeModal('sharkModal')"
+        >
+            ×
+        </button>
+
+        <div class="modal-header">
+
+            <h2>
+                Shark Diving in The Bahamas
+            </h2>
+
+            <p>
+                Get an unforgettable look at some of the
+                incredible sharks found in Bahamian waters.
+            </p>
+
+        </div>
+
+        <div class="gallery">
+
+            <img
+                src="https://images.unsplash.com/photo-1560275619-4cc5fa59d3ae?auto=format&fit=crop&w=1200&q=85"
+                alt="Diver swimming with sharks in The Bahamas"
+            >
+
+            <img
+                src="https://images.unsplash.com/photo-1560275619-4662e36fa65c?auto=format&fit=crop&w=1200&q=85"
+                alt="Tiger shark in The Bahamas"
+            >
+
+            <img
+                src="https://images.unsplash.com/photo-1560275619-4cc5fa59d3ae?auto=format&fit=crop&w=1200&q=85"
+                alt="Shark diving adventure"
+            >
+
+        </div>
+
+        <div class="modal-button">
+
+            <a
+                href="https://www.bahamas.com/uk/things-to-do/diving/shark-diving"
+                target="_blank"
+                class="button"
+            >
+                Explore Shark Diving in The Bahamas →
+            </a>
+
+        </div>
+
+    </div>
 
 </div>
 
-</section> <!-- Experiences --> <section class="experiences" id="experiences">
-<div class="section-title">
 
-  <h2>Experience The Bahamas</h2>
+<!-- =========================
+     JET SKI MODAL
+========================= -->
 
-  <p>
-    Make unforgettable memories on the beautiful waters of The Bahamas.
-  </p>
+<div
+    class="modal"
+    id="jetskiModal"
+    onclick="closeOutside(event, 'jetskiModal')"
+>
+
+    <div class="modal-box">
+
+        <button
+            class="close"
+            onclick="closeModal('jetskiModal')"
+        >
+            ×
+        </button>
+
+        <div class="modal-header">
+
+            <h2>
+                Jet Skiing in The Bahamas
+            </h2>
+
+            <p>
+                Ride across the turquoise waters and enjoy
+                the ultimate Bahamian water adventure.
+            </p>
+
+        </div>
+
+        <div class="gallery">
+
+            <img
+                src="https://images.unsplash.com/photo-1768853895335-b7ce11d76873?auto=format&fit=crop&w=1200&q=85"
+                alt="Person riding a jet ski"
+            >
+
+            <img
+                src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=1200&q=85"
+                alt="Turquoise tropical ocean"
+            >
+
+            <img
+                src="https://images.unsplash.com/photo-1544551763-77ef2d0cfc6c?auto=format&fit=crop&w=1200&q=85"
+                alt="Water adventure in tropical waters"
+            >
+
+        </div>
+
+        <div class="modal-button">
+
+            <a
+                href="https://www.bahamas.com/plan-your-trip/things-to-do/under-the-sun-water-sports"
+                target="_blank"
+                class="button"
+            >
+                Explore Jet Skiing in The Bahamas →
+            </a>
+
+        </div>
+
+    </div>
 
 </div>
 
-<div class="cards">
 
-  <div class="card">
+<!-- =========================
+     ABOUT
+========================= -->
 
-    <div class="card-icon">🤿</div>
+<section class="about" id="about">
 
-    <h3>Snorkeling</h3>
+    <div class="about-content">
+
+        <h2>
+            Welcome to Pink Sands Charters
+        </h2>
+
+        <p>
+            We provide unforgettable private boating experiences
+            in The Bahamas, combining adventure, relaxation,
+            and the natural beauty of the islands.
+
+            Whether you're looking for an exciting day of
+            water activities or a relaxing escape on the ocean,
+            Pink Sands Charters is here to make your day on
+            the water one you'll never forget.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     CONTACT
+========================= -->
+
+<section class="contact" id="contact">
+
+    <h2>
+        Ready for Your Adventure?
+    </h2>
 
     <p>
-      Explore crystal-clear Bahamian waters and discover colorful reefs
-      and incredible marine life beneath the surface.
+        Contact Pink Sands Charters today and start planning
+        your perfect day on the beautiful waters of The Bahamas.
     </p>
-
-  </div>
-
-
-  <div class="card">
-
-    <div class="card-icon">🦈</div>
-
-    <h3>Shark Diving</h3>
 
     <p>
-      Experience the thrill of getting into the water and seeing sharks
-      up close in their natural environment.
+        Email:
+        <a href="mailto:PinkSandsCharters@hotmail.com">
+            PinkSandsCharters@hotmail.com
+        </a>
     </p>
-
-  </div>
-
-
-  <div class="card">
-
-    <div class="card-icon">🌊</div>
-
-    <h3>Jet Skiing</h3>
 
     <p>
-      Feel the rush as you ride across the turquoise waters of paradise
-      and experience The Bahamas from a whole new perspective.
+        Phone:
+        <a href="tel:+12428063681">
+            +1 (242) 806-3681
+        </a>
     </p>
 
-  </div>
+    <div class="contact-button">
 
-</div>
+        <a
+            href="mailto:PinkSandsCharters@hotmail.com"
+            class="button"
+        >
+            Contact Us
+        </a>
 
-</section> <!-- About --> <section class="about" id="about">
-<div class="about-content">
+    </div>
 
-  <h2>Welcome to Pink Sands Charters</h2>
+</section>
 
-  <p>
-    We provide unforgettable private boating experiences in The Bahamas,
-    combining adventure, relaxation, and the natural beauty of the islands.
-    Whether you're looking for an exciting day of water activities or a
-    relaxing escape on the ocean, Pink Sands Charters is here to make
-    your day on the water one you'll never forget.
-  </p>
 
-</div>
+<!-- =========================
+     FOOTER
+========================= -->
 
-</section> <!-- Contact --> <section class="contact" id="contact">
-<h2>Ready for Your Adventure?</h2>
+<footer>
 
-<p>
-  Contact Pink Sands Charters today and start planning your perfect
-  day on the beautiful waters of The Bahamas.
-</p>
+    <p>
+        <strong>
+            Pink Sands Charters
+        </strong>
+    </p>
 
-<p>
-  Email:
-  <a href="mailto:PinkSandsCharters@hotmail.com">
-    PinkSandsCharters@hotmail.com
-  </a>
-</p>
+    <p>
+        The Bahamas
+    </p>
 
-<p>
-  Phone:
-  <a href="tel:+12428063681">
-    +1 (242) 806-3681
-  </a>
-</p>
+    <p>
+        © 2026 Pink Sands Charters.
+        All rights reserved.
+    </p>
 
-<div class="contact-button">
-  <a
-    href="mailto:PinkSandsCharters@hotmail.com"
-    class="button">
-    Contact Us
-  </a>
-</div>
+</footer>
 
-</section> <!-- Footer --> <footer>
-<p><strong>Pink Sands Charters</strong></p>
 
-<p>The Bahamas</p>
+<!-- =========================
+     JAVASCRIPT
+========================= -->
 
-<p>© 2026 Pink Sands Charters. All rights reserved.</p>
+<script>
 
-</footer> </body> </html>
+/* Open gallery */
+
+function openModal(id) {
+
+    document.getElementById(id).classList.add("active");
+
+    document.body.style.overflow = "hidden";
+
+}
+
+
+/* Close gallery */
+
+function closeModal(id) {
+
+    document.getElementById(id).classList.remove("active");
+
+    document.body.style.overflow = "auto";
+
+}
+
+
+/* Close when clicking outside box */
+
+function closeOutside(event, id) {
+
+    if (event.target.id === id) {
+
+        closeModal(id);
+
+    }
+
+}
+
+
+/* Close with ESC key */
+
+document.addEventListener("keydown", function(event) {
+
+    if (event.key === "Escape") {
+
+        document.querySelectorAll(".modal").forEach(function(modal) {
+
+            modal.classList.remove("active");
+
+        });
+
+        document.body.style.overflow = "auto";
+
+    }
+
+});
+
+</script>
+
+
+</body>
+</html>
+
